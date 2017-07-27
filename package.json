@@ -1,7 +1,7 @@
 {
-  "name": "react-fullpage",
+  "name": "react-fullpage-navbar",
   "version": "0.1.17",
-  "description": "An implementation of fullpage.js in react based on react-fullpage",
+  "description": "A fork of react-fullpage with navbar support",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subtirelumihail/react-fullpage"
+    "url": "git+https://github.com/Brettm12345/react-fullpage-navbar"
   },
   "keywords": [
     "react",
     "fullpage.js"
   ],
-  "author": "Subtirelu Mihail",
+  "author": "Brett Mandler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/subtirelumihail/react-fullpage/issues"
+    "url": "https://github.com/Brettm12345/react-fullpage-navbar/issues"
   },
-  "homepage": "https://github.com/subtirelumihail/react-fullpage",
+  "homepage": "https://github.com/Brettm12345/react-fullpage-navbar",
   "dependencies": {
     "react": "15.3.2",
     "react-dom": "15.3.2"
