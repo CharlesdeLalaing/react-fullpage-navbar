@@ -11,7 +11,7 @@ class Section extends React.Component {
 
     handleResize() {
         this.setState({
-            windowHeight: window.innerHeight
+            windowHeight: (window.innerHeight - this.props.navHeight)
         });
     }
 
@@ -30,8 +30,8 @@ class Section extends React.Component {
         const sectionStyle = {
             width: '100%',
             display: alignVertical ? 'table' : 'block',
-            height: this.state.windowHeight,
-            maxHeight: this.state.windowHeight,
+            height: this.state.windowHeight - this.props.navHeight,
+            maxHeight: this.state.windowHeight - this.props.navHeight,
             overflow: 'auto',
             backgroundColor: this.props.color,
             paddingTop: this.context.sectionPaddingTop,
@@ -67,6 +67,7 @@ Section.propTypes = {
 
 Section.contextTypes = {
     verticalAlign: React.PropTypes.bool,
+    navHeight: React.PropTypes.Number,
     sectionClassName: React.PropTypes.string,
     sectionPaddingTop: React.PropTypes.string,
     sectionPaddingBottom: React.PropTypes.string,
