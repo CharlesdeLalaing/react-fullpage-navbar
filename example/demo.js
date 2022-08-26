@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom';
 import { SectionsContainer, Section, Header, Footer } from '../index';
 
 const app = document.querySelector('#app');
-
 class Example extends React.Component {
     constructor(props) {
       super(props)
@@ -33,19 +32,24 @@ class Example extends React.Component {
         return (
             <div>
                 <Header>
-                    <a href="#sectionOne" className="opa">Section One</a>
-                    <a href="#sectionTwo">Section Two</a>
-                    <a href="#sectionThree">Section Three</a>
+                        <a href="/">
+                            <img src="./img/logoHectorWhite.png" width="100px" height="100px"/>
+                        </a> 
+                        <div>
+                        <a href="#sectionOne" className="opa">BIO</a>
+                        <a href="#sectionTwo">PROJECTS</a>
+                        <a href="#sectionThree">CONTACT</a>
+                        </div>
                 </Header>
                 <Footer>
-                    <a href="">Dcoumentation</a>
-                    <a href="">Example Source</a>
-                    <a href="">About</a>
+                    <a href="">INSTAGRAM</a>
+                    <a href="">HECTOR.COM</a>
+                    <a href="">LINKEDIN</a>
                 </Footer>
                 <SectionsContainer className="container" {...options} activeSection={current}>
-                    <Section className="custom-section" verticalAlign="true" color="#69D2E7">Page 1</Section>
-                    <Section color="#A7DBD8">Page 2</Section>
-                    <Section color="#E0E4CC">Page 3</Section>
+                    <Section className="custom-section" verticalAlign="true" color="#000000">Page 1</Section>
+                    <Section color="#000000">Page 2</Section>
+                    <Section color="#000000">Page 3</Section>
                 </SectionsContainer>
 
                 <div className="btnGroup">

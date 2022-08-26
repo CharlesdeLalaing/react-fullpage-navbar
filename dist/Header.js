@@ -33,8 +33,15 @@ var Header = function (_React$Component) {
             var headerStyle = {
                 position: 'fixed',
                 width: '100%',
+                display: 'flex',
                 zIndex: '1',
-                top: '0'
+                top: '0',
+                backgroundColor: 'transparent',
+                justifyContent: 'space-between',
+                padding: '1em 4em',
+                alignItems: 'center',
+                textAlign: 'center',
+                border: 'none'
             };
 
             return React.createElement(

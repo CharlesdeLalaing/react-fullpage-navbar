@@ -365,7 +365,7 @@ var SectionsContainer = function (_React$Component) {
                     display: 'block',
                     margin: '10px',
                     borderRadius: '100%',
-                    backgroundColor: '#556270',
+                    backgroundColor: '#fff',
                     padding: '5px',
                     transition: 'all 0.2s',
                     transform: _this5.state.activeSection === index ? 'scale(1.3)' : 'none'
